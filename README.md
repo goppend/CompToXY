@@ -4,11 +4,14 @@ An old-and-busted (but working!) DesignSpark project I made many years ago as PC
 Like many existing versions of this project, the main functional component is a LM1881 IC, which provides the CSYNC and VSYNC pulse signals to some analog circuitry in order to form a raster (the X and Y outputs). The Z output is the video input passed through an AD8032 op-amp in an inverting amplifier configuration.
 
 Some pictures of the design:
-![The project schematic](pics/schematic.png)
+
 The project schematic.
 
-![The PCB layout](pics/pcb_layout.png)
+![The project schematic](pics/schematic.png)
+
 The PCB layout.
+
+![The PCB layout](pics/pcb_layout.png)
 
 ## Test procedure:
  - Connect the XY outputs to the oscilloscope using a 3.5mm audio jack to stereo RCA cable and RCA to BNC adapters. Red is X and white is Y.
@@ -17,19 +20,25 @@ The PCB layout.
  - Connect any composite video source (I used my SNES with the 240p Test Suite) to the video input.
  - Set the DC power supply's output to 9V, and connect it to the power inputs as shown below (red is +9V, black is ground).
 
-![The PCB fully connected](pics/1.jpg)
 The PCB fully connected.
 
-![Video test output](pics/2.jpg)
+![The PCB fully connected](pics/1.jpg)
+
 Video test output (SMPTE color bars, albeit in grayscale).
 
-![Another test output](pics/3.jpg)
+![Video test output](pics/2.jpg)
+
 Another test output (monoscope pattern shows distinct distortion across the field).
 
+![Another test output](pics/3.jpg)
+
 Bonus:
+
+Some DOOM footage from my SNES.
+
 ![SNES DOOM splash screen](pics/4.jpg)
 ![SNES DOOM E1M1](pics/5.jpg)
-Some DOOM footage from my SNES.
+
 
 ## Problems with this design
 Since I have moved on to larger-scale projects, I will not be updating this design. However, there are critical issues that are worth bringing up.
