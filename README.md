@@ -1,5 +1,5 @@
 # Comp to XY
-An old-and-busted (but working!) DesignSpark project I made many years ago as PCB design practice. It's intended to convert a component baseband video signal to an XYZ format in a way that it can be viewed on an analog oscilloscope.
+An old-and-busted (but working!) DesignSpark project I made many years ago as PCB design practice. It's intended to convert a composite video baseband signal to a format that can be displayed on an analog oscilloscope, albeit in grayscale.
 
 Like many existing versions of this project, the main functional component is a LM1881 IC, which provides the CSYNC and VSYNC pulse signals to some analog circuitry in order to form a raster (the X and Y outputs). The Z output is the video input passed through an AD8032 op-amp in an inverting amplifier configuration.
 
@@ -41,7 +41,7 @@ Some DOOM footage from my SNES.
 
 
 ## Problems with this design
-Since I have moved on to larger-scale projects, I will not be updating this design. However, there are critical issues that are worth bringing up.
+Since I have moved on to other projects, I will not be updating this design. However, there are critical issues that are worth recording.
  - The schematic shows D1 and D2 facing the wrong way.
  - At the time, transistor arrays were convenient, but those parts are not kept in stock in a large quantity. A redesign using discrete components would be better.
  - Power entry can be more clear. Some input protection would be nice as well, getting the inputs backwards __will__ damage most components.
